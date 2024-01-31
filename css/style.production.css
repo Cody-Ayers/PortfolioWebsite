@@ -129,9 +129,9 @@ button:focus,
 
 .profile__portrait {
   float: left;
-  width: 300px;
+  width: 250px;
   margin-right: 40px;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 .page-footer {
@@ -187,6 +187,13 @@ button:focus,
     min-height: auto;
     margin: 0;
     padding: 15px;
+  }
+
+  .grid__item.meet-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
   }
 
   .grid__item:last-child {
