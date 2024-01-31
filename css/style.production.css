@@ -129,9 +129,9 @@ button:focus,
 
 .profile__portrait {
   float: left;
-  width: 250px;
+  width: 300px;
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 .page-footer {
