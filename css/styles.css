@@ -1,7 +1,6 @@
 :root {
-  --primary-color: #560b16;
-  --secondary-color: #ffc88a;
-  --dark-grey: #2b2b2b;
+  --primary-color: #172121;
+  --secondary-color: #e5d0cc;
   --font-weights: 700;
 }
 
@@ -25,10 +24,14 @@ body {
   text-align: center;
 }
 
-.contact {
-  text-align: center;
-  width: 100%;
+.contact-card {
+  background-color: #bfacb5;
+  width: auto;
+  min-height: auto;
+  margin: 0;
   padding: 20px;
+  border-radius: 5%;
+  border-color: #808080;
 }
 
 .contact__item li {
@@ -94,7 +97,7 @@ button,
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #357b70;
+  background-color: #444554;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -131,12 +134,12 @@ button:focus,
   display: flex;
   align-items: center;
   align-self: center;
-  background-color: lightgray;
+  background-color: #bfacb5;
   max-width: 700px;
   margin: 200px 40px auto;
   padding: 10px 40px 30px;
   border-radius: 5%;
-  border-color: gray;
+  border-color: #808080;
   flex: 1;
 }
 
@@ -161,7 +164,7 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
-  background-color: #489c79;
+  background-color: #bfacb5;
 }
 
 .page-header__item {
@@ -211,16 +214,16 @@ button:focus,
 }
 
 .work-grid__item {
-  background-color: var(--background-color-tertiary);
+  background-color: #bfacb5;
   width: auto;
   min-height: auto;
   margin: 0;
   padding: 20px;
   border-radius: 5%;
-  border-color: var(--border-color-primary);
+  border-color: #808080;
 }
 
-.meet-image {
+.app-screenshot-image {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -229,15 +232,15 @@ button:focus,
 
 .work-grid__item p {
   text-align: center;
+  padding-right: 40px;
 }
 
 .work-grid__item:last-child {
   grid-column: 3 / 3;
-  grid-row: 1 / 3;
+  grid-row: 2 / 3;
 }
 
 .tech-used {
-  text-align: center;
   list-style-type: none;
 }
 
