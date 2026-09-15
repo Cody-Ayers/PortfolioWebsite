@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #0f172a; /* Deep navy/slate for text */
-  --secondary-color: #f8fafc; /* Light slate-gray page background */
-  --card-bg-color: #ffffff; /* Pure white cards for high contrast */
-  --button-bg-color: #2563eb; /* Modern accent blue */
-  --button-hover-color: #1d4ed8; /* Slightly darker blue for hover */
+  --primary-color: #0f172a; /* Deep navy body text */
+  --secondary-color: #f1f5f9; /* Soft cool gray background */
+  --card-bg-color: #ffffff; /* Pure white cards */
+  --button-bg-color: #2563eb; /* Vibrant blue buttons */
+  --button-hover-color: #1d4ed8;
   --link-color: #2563eb;
   --link-visited: #1d4ed8;
   --link-active: #0284c7;
@@ -25,16 +25,16 @@ body {
   padding: 0;
 }
 
-/* Fixed Navigation Bar Contrast */
+/* Header Dark Bar */
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 15px 5%;
-  background-color: #ffffff; /* Crisp white background for header */
-  border-bottom: 1px solid #e2e8f0; /* Clear separator line from the body */
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  padding: 16px 5%;
+  background-color: #0f172a;
+  border-bottom: 2px solid #1e293b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #logo {
@@ -45,21 +45,25 @@ body {
 
 /* Nav Item Bolding & Spacing */
 .navigation-list__item {
-  color: #475569; /* Slightly darker slate for unselected items */
-  font-weight: 500;
+  color: #cbd5e1;
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .navigation-list__item:hover {
-  color: var(--button-bg-color); /* Highlight hover with accent blue */
+  color: #ffffff;
+  background-color: #1e293b;
 }
 
 .navigation-list__item--active {
-  color: var(--primary-color);
-  font-weight: var(--font-weight-bold);
-  border-bottom: 2px solid var(--button-bg-color); /* Accent underline on active tab */
-  padding-bottom: 4px;
+  color: #ffffff;
+  background-color: #2563eb;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
 }
 
 /* Typography & Links */
