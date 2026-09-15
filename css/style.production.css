@@ -25,16 +25,14 @@ body {
   padding: 0;
 }
 
-/* Header Dark Bar */
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 16px 5%;
-  background-color: #0f172a;
-  border-bottom: 2px solid #1e293b;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #e2e8f0; /* Soft cool gray header fill */
+  border-bottom: 1px solid #cbd5e1;
 }
 
 #logo {
@@ -45,24 +43,24 @@ body {
 
 /* Nav Item Bolding & Spacing */
 .navigation-list__item {
-  color: #cbd5e1;
+  color: #1e293b;
   font-weight: 600;
   text-decoration: none;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
 .navigation-list__item:hover {
-  color: #ffffff;
-  background-color: #1e293b;
+  color: #2563eb;
+  background-color: #ffffff;
 }
 
 .navigation-list__item--active {
   color: #ffffff;
-  background-color: #2563eb;
+  background-color: #0f172a; /* Solid navy pill for active tab */
   font-weight: 700;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 6px;
 }
 
