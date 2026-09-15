@@ -1,0 +1,8 @@
+# Ignore macOS system files
+echo ".DS_Store" >> .gitignore
+
+# Ignore node modules (if using npm packages)
+echo "node_modules/" >> .gitignore
+
+# Ignore local environment variables / secrets
+echo ".env" >> .gitignore
