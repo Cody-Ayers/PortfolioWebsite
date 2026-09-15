@@ -25,14 +25,16 @@ body {
   padding: 0;
 }
 
+/* Header & Navigation Reset */
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 16px 5%;
-  background-color: #e2e8f0; /* Soft cool gray header fill */
-  border-bottom: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  border-bottom: 2px solid #cbd5e1;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.05);
 }
 
 #logo {
@@ -41,9 +43,17 @@ body {
   object-fit: contain;
 }
 
-/* Nav Item Bolding & Spacing */
+.navigation-list {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .navigation-list__item {
-  color: #1e293b;
+  color: #334155;
   font-weight: 600;
   text-decoration: none;
   padding: 8px 16px;
@@ -53,15 +63,16 @@ body {
 
 .navigation-list__item:hover {
   color: #2563eb;
-  background-color: #ffffff;
+  background-color: #f1f5f9;
 }
 
 .navigation-list__item--active {
-  color: #ffffff;
-  background-color: #0f172a; /* Solid navy pill for active tab */
+  color: #2563eb;
+  background-color: #eff6ff;
   font-weight: 700;
   padding: 8px 16px;
   border-radius: 6px;
+  border-bottom: 2px solid #2563eb;
 }
 
 /* Typography & Links */
@@ -132,49 +143,156 @@ button:focus,
   transform: translateY(-1px);
 }
 
-/* Layout Sections */
-.about {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+.button--secondary {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  border: 1px solid #cbd5e1 !important;
 }
 
-.profile {
+.button--secondary:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Layout Containers */
+.main-content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Homepage Hero Card */
+.hero-card {
+  background-color: var(--card-bg-color);
+  border-radius: 16px;
+  padding: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: var(--card-bg-color);
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  gap: 40px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 60px;
 }
 
+.hero-avatar .profile__portrait,
 .profile__portrait {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin-right: 40px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 3px solid var(--primary-color);
+  object-fit: cover;
+  border: 4px solid #f1f5f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
-.contact-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--card-bg-color);
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 12px;
+.hero-badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
 }
 
-.contact__item li {
-  list-style-type: none;
+.hero-title {
+  margin: 0 0 12px 0;
+  font-size: 2.25rem;
+  color: var(--primary-color);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.pill {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Featured Projects Section */
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--card-bg-color);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.project-tags span {
+  font-size: 0.75rem;
+  color: #2563eb;
+  background-color: #eff6ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.project-link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* About Page Custom Layout */
@@ -260,7 +378,7 @@ button:focus,
   display: block;
 }
 
-/* Modern Work Grid */
+/* Work Grid */
 .work {
   max-width: 1200px;
   margin: 60px auto;
@@ -310,43 +428,23 @@ button:focus,
   text-align: center;
 }
 
-/* Keyframe Animations */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-color {
-  0% {
-    fill: #ffffff;
-  }
-  50% {
-    fill: #778899;
-  }
-  100% {
-    fill: #000000;
-  }
-}
-
-.cloud-left,
-.cloud-center,
-.cloud-right {
-  animation: 6s cloud-color infinite alternate linear;
-}
-
 /* Responsive Media Queries */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+  .hero-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .tech-pills,
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -361,18 +459,6 @@ button:focus,
   .page-header {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .profile {
-    flex-direction: column;
-    text-align: center;
-    margin: 30px 20px;
-    padding: 24px;
-  }
-
-  .profile__portrait {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 
   .work-grid {

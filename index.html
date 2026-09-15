@@ -1,63 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cody Ayers Web Portfolio</title>
+    <title>Cody Ayers | Web Developer</title>
     <link href="img/cody-ayers-favicon-.png" rel="shortcut icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/style.production.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/cody-ayers-logo.png"
+        alt="Cody Ayers Logo"
+        class="page-header__item"
+        id="logo"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-    <div class="content-container">
-        <header class="page-header">
-            <!--Remember to add your logo here-->
-            <img src="img/cody-ayers-logo.png" alt="Cody's Company Logo" class="page-header__item" id="logo" />
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem"
-                            class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="profile">
-            <img src="img/cody-headshot.png" class="profile__portrait" alt="Cody's Professional Head Shot " />
-            <h1>Hello World!</h1>
-            <p>
-                My name is Cody Ayers. I am a <span>web</span> developer from Colorado.
-            </p>
-            <a href="https://github.com/Cody-Ayers" target="_blank">Come check out my coding</a>
-        </main>
-        <footer class="page-footer">
-            <p>Find me on:</p>
-            <div class="social-media">
-                <a href="https://github.com/Cody-Ayers" target="_blank">
-                    <img src="img/github_icon.svg" alt="Github" />
-                </a>
-                <a href="https://twitter.com/cody_ayers_" target="_blank">
-                    <img src="img/twitter_icon.svg" alt="Twitter" />
-                </a>
-                <a href="https://www.linkedin.com/in/cody-ayers/" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="LinkedIn" />
-                </a>
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-card">
+        <div class="hero-avatar">
+          <img
+            src="img/cody-headshot.png"
+            alt="Cody Ayers Headshot"
+            class="profile__portrait"
+          />
+        </div>
+        <div class="hero-details">
+          <span class="hero-badge">Full-Stack Web Developer</span>
+          <h1 class="hero-title">Hello World, I'm Cody!</h1>
+          <p class="hero-description">
+            I build responsive, accessible, and user-focused web applications
+            with modern frontend and backend technologies.
+          </p>
+
+          <div class="tech-pills">
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Python</span>
+            <span class="pill">React</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="work.html" class="button">View Featured Projects</a>
+            <a href="files/cv.pdf" class="button button--secondary" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Preview Section -->
+      <section class="featured-projects">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Movie Flix App</h3>
+              <p>
+                A full-stack React web app allowing users to browse movies,
+                register accounts, and manage their favorite movies list.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <a href="work.html" class="project-link">Learn More &rarr;</a>
             </div>
-        </footer>
-    </div>
-    <script src="js/tota11y.min.js"></script>
-</body>
+          </article>
 
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Meet App</h3>
+              <p>
+                A serverless, progressive web application (PWA) built with React
+                to display upcoming events using Google Calendar API.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>PWA</span>
+                <span>Serverless</span>
+              </div>
+              <a href="work.html" class="project-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__content">
+              <h3>Chat App</h3>
+              <p>
+                A native mobile chat application built with React Native and
+                Firebase for real-time text messaging and image sharing.
+              </p>
+              <div class="project-tags">
+                <span>React Native</span>
+                <span>Expo</span>
+                <span>Firebase</span>
+              </div>
+              <a href="work.html" class="project-link">Learn More &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Find me on:</p>
+      <div class="social-media">
+        <a href="https://github.com/Cody-Ayers" target="_blank"
+          ><img src="img/github_icon.svg" alt="GitHub"
+        /></a>
+        <a href="https://twitter.com" target="_blank"
+          ><img src="img/twitter_icon.svg" alt="Twitter"
+        /></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
