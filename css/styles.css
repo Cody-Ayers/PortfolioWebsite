@@ -393,19 +393,21 @@ button:not(.button--secondary):hover {
   margin-top: 10px;
 }
 
-/* Contact Page Card Layout */
+/* Responsive Contact Page Layout */
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 20px 15px; /* Scaled down for mobile viewports */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-card {
   background-color: #ffffff;
   max-width: 600px;
   width: 100%;
-  padding: 40px;
+  padding: 24px 18px; /* Compact padding for small screens */
   border-radius: 12px;
   border: 1px solid #e2e8f0;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
@@ -413,48 +415,63 @@ button:not(.button--secondary):hover {
   box-sizing: border-box;
 }
 
+/* Tablet & Desktop spacing enhancement */
+@media screen and (min-width: 600px) {
+  .contact-container {
+    padding: 40px 20px;
+  }
+  .contact-card {
+    padding: 40px;
+  }
+}
+
 .contact-card h1 {
   margin-top: 0;
   margin-bottom: 8px;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #0f172a;
 }
 
 .contact-subtitle {
   color: #475569;
   margin-bottom: 24px;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-/* Details Box Styling */
+/* Details Box Mobile Support */
 .contact-details {
   background-color: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  padding: 16px 20px;
-  margin-bottom: 28px;
+  padding: 14px 16px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 .contact-info-item {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap; /* Allows text to wrap on small screens */
+  gap: 6px;
   align-items: center;
   color: #334155;
   font-size: 0.95rem;
+  word-break: break-word;
 }
 
 .contact-info-item strong {
-  min-width: 75px;
+  min-width: 70px;
 }
 
-/* Form Layout & Inputs */
+/* Form Responsiveness */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  width: 100%;
 }
 
 .form-group {
@@ -474,7 +491,8 @@ button:not(.button--secondary):hover {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 14px;
+  max-width: 100%;
+  padding: 12px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   font-family: inherit;
