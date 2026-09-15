@@ -36,8 +36,8 @@ body {
 }
 
 #logo {
+  max-height: 40px;
   width: auto;
-  height: 50px;
   object-fit: contain;
 }
 
@@ -220,7 +220,7 @@ button:focus,
 .about__table caption {
   font-size: 1.25rem;
   font-weight: var(--font-weight-bold);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
