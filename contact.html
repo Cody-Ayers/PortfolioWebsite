@@ -73,12 +73,26 @@
             </div>
           </div>
 
+          <!-- Formspree Integration Form -->
           <form
             class="contact-form"
-            action="mailto:cayers21@gmail.com"
-            method="post"
-            enctype="text/plain"
+            action="https://formspree.io/f/mwlpeoyg"
+            method="POST"
           >
+            <!-- Formspree Configurations -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Contact Submission"
+            />
+            <input
+              type="text"
+              name="_gotcha"
+              style="display: none !important"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
             <div class="form-group">
               <label for="contact-name">Name</label>
               <input
