@@ -25,14 +25,16 @@ body {
   padding: 0;
 }
 
-/* Header & Navigation */
+/* Fixed Navigation Bar Contrast */
 .page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 15px 5%;
-  background-color: var(--card-bg-color);
+  background-color: #ffffff; /* Crisp white background for header */
+  border-bottom: 1px solid #e2e8f0; /* Clear separator line from the body */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
 }
 
 #logo {
@@ -41,24 +43,23 @@ body {
   object-fit: contain;
 }
 
-.navigation-list {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/* Nav Item Bolding & Spacing */
+.navigation-list__item {
+  color: #475569; /* Slightly darker slate for unselected items */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.navigation-list__item {
-  text-decoration: none;
-  color: var(--primary-color);
+.navigation-list__item:hover {
+  color: var(--button-bg-color); /* Highlight hover with accent blue */
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
-  font-weight: var(--font-weight-bold);
   color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  border-bottom: 2px solid var(--button-bg-color); /* Accent underline on active tab */
+  padding-bottom: 4px;
 }
 
 /* Typography & Links */
