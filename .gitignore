@@ -6,3 +6,4 @@ echo "node_modules/" >> .gitignore
 
 # Ignore local environment variables / secrets
 echo ".env" >> .gitignore.DS_Store
+.DS_Store
