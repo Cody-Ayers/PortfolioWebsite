@@ -4,22 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Work | Cody Ayers</title>
-    <link href="img/cody-ayers-favicon-.png" rel="shortcut icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.production.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   </head>
+
   <body>
+    <!-- Header with navigation -->
     <header class="page-header">
-      <img
-        src="img/cody-ayers-logo.png"
-        alt="Cody Ayers Logo"
-        class="page-header__item"
-        id="logo"
-      />
+      <img src="img/CodyAyersLogo.png" alt="Cody Ayers Logo" id="logo" />
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -49,166 +52,134 @@
       </nav>
     </header>
 
-    <main class="main-content">
-      <section class="work">
-        <h1 class="section-title">My Projects</h1>
+    <!-- Main Content -->
+    <main class="work-container">
+      <h1 class="page-title">My Projects</h1>
 
-        <div class="work-grid">
-          <!-- Pokemon Pokedex -->
-          <article class="project-card">
-            <img
-              src="img/pokedex-screenshot.png"
-              alt="Pokemon Pokedex App Screenshot"
-              class="project-card__image"
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 15px;
-              "
-            />
-            <div class="project-card__content">
-              <h3>Pokemon Pokedex</h3>
-              <p>
-                A web application built using HTML, CSS, and JavaScript that
-                fetches data from an external API to enable a detailed view of
-                Pokémon data points.
-              </p>
-              <div class="project-tags">
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>jQuery</span>
-                <span>REST API</span>
-              </div>
+      <div class="work-grid">
+        <!-- Pokemon Pokedex -->
+        <article class="project-card">
+          <img
+            src="img/pokedex-screenshot.png"
+            alt="Pokemon Pokedex App Screenshot"
+            class="project-card__image"
+          />
+          <div class="project-card__content">
+            <h2>Pokemon Pokedex</h2>
+            <p>
+              A web application built using HTML, CSS, and JavaScript that
+              fetches data from an external API to enable a detailed view of
+              Pokémon data points.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>jQuery</span>
+              <span>REST API</span>
             </div>
-            <div class="hero-actions" style="margin-top: 15px">
-              <a
-                href="https://github.com/Cody-Ayers/pokedex-app"
-                class="button"
-                target="_blank"
-                >View on GitHub</a
-              >
-            </div>
-          </article>
+            <a
+              href="https://github.com/Cody-Ayers/pokedex-app"
+              target="_blank"
+              class="button"
+              >View on GitHub</a
+            >
+          </div>
+        </article>
 
-          <!-- Cody'sFlix API -->
-          <article class="project-card">
-            <img
-              src="img/Myflix-API.png"
-              alt="Cody'sFlix API Screenshot"
-              class="project-card__image"
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 15px;
-              "
-            />
-            <div class="project-card__content">
-              <h3>Cody'sFlix API</h3>
-              <p>
-                A server-side component for a movies web application featuring a
-                REST API, user database management, and authentication.
-              </p>
-              <div class="project-tags">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-                <span>JWT</span>
-              </div>
+        <!-- Cody'sFlix API -->
+        <article class="project-card">
+          <img
+            src="img/Myflix-API.png"
+            alt="Cody'sFlix API Screenshot"
+            class="project-card__image"
+          />
+          <div class="project-card__content">
+            <h2>Cody'sFlix API</h2>
+            <p>
+              A server-side component for a movies web application featuring a
+              REST API, user database management, and authentication.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
             </div>
-            <div class="hero-actions" style="margin-top: 15px">
-              <a
-                href="https://github.com/Cody-Ayers/movie_api"
-                class="button"
-                target="_blank"
-                >View on GitHub</a
-              >
-            </div>
-          </article>
+            <a
+              href="https://github.com/Cody-Ayers/movie_api"
+              target="_blank"
+              class="button"
+              >View on GitHub</a
+            >
+          </div>
+        </article>
 
-          <!-- Cody'sFlix React App -->
-          <article class="project-card">
-            <img
-              src="img/CodysFlix-React.png"
-              alt="Cody'sFlix React App Screenshot"
-              class="project-card__image"
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 15px;
-              "
-            />
-            <div class="project-card__content">
-              <h3>Cody'sFlix React App</h3>
-              <p>
-                A single-page, client-side React interface built on top of the
-                Cody'sFlix REST API allowing users to browse movies and save
-                favorites.
-              </p>
-              <div class="project-tags">
-                <span>React</span>
-                <span>React Bootstrap</span>
-                <span>Parcel</span>
-              </div>
+        <!-- Cody'sFlix React App -->
+        <article class="project-card">
+          <img
+            src="img/CodysFlix-React.png"
+            alt="Cody'sFlix React App Screenshot"
+            class="project-card__image"
+          />
+          <div class="project-card__content">
+            <h2>Cody'sFlix React App</h2>
+            <p>
+              A single-page, client-side React interface built on top of the
+              Cody'sFlix REST API allowing users to browse movies and save
+              favorites.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>React Bootstrap</span>
+              <span>Parcel</span>
             </div>
-            <div class="hero-actions" style="margin-top: 15px">
-              <a
-                href="https://github.com/Cody-Ayers/myFlix-client"
-                class="button"
-                target="_blank"
-                >View on GitHub</a
-              >
-            </div>
-          </article>
+            <a
+              href="https://github.com/Cody-Ayers/myFlix-client"
+              target="_blank"
+              class="button"
+              >View on GitHub</a
+            >
+          </div>
+        </article>
 
-          <!-- Meet React App -->
-          <article class="project-card">
-            <img
-              src="img/Meet_Screenshot.png"
-              alt="Meet React App Screenshot"
-              class="project-card__image"
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                margin-bottom: 15px;
-              "
-            />
-            <div class="project-card__content">
-              <h3>Meet React App</h3>
-              <p>
-                A serverless, progressive web application (PWA) built with React
-                to display upcoming events using the Google Calendar API.
-              </p>
-              <div class="project-tags">
-                <span>React</span>
-                <span>PWA</span>
-                <span>AWS Lambda</span>
-              </div>
+        <!-- Meet React App -->
+        <article class="project-card">
+          <img
+            src="img/Meet_Screenshot.png"
+            alt="Meet React App Screenshot"
+            class="project-card__image"
+          />
+          <div class="project-card__content">
+            <h2>Meet React App</h2>
+            <p>
+              A serverless, progressive web application (PWA) built with React
+              to display upcoming events using the Google Calendar API.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>PWA</span>
+              <span>AWS Lambda</span>
             </div>
-            <div class="hero-actions" style="margin-top: 15px">
-              <a
-                href="https://github.com/Cody-Ayers/meet"
-                class="button"
-                target="_blank"
-                >View on GitHub</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
+            <a
+              href="https://github.com/Cody-Ayers/meet"
+              target="_blank"
+              class="button"
+              >View on GitHub</a
+            >
+          </div>
+        </article>
+      </div>
     </main>
 
+    <!-- Footer -->
     <footer class="page-footer">
-      <p>Find me on:</p>
+      <p>Find me on</p>
       <div class="social-media">
         <a href="https://github.com/Cody-Ayers" target="_blank"
-          ><img src="img/github_icon.svg" alt="GitHub"
+          ><img src="img/github_icon.svg" alt="Github Logo"
         /></a>
-        <a href="https://linkedin.com" target="_blank"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        <a href="https://www.linkedin.com/in/codyayers/" target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn Logo"
         /></a>
       </div>
     </footer>
