@@ -55,48 +55,56 @@
     <!-- Main Content -->
     <main class="work-container">
       <h1 class="page-title">My Projects</h1>
+      <p class="page-subtitle">
+        A collection of full-stack, front-end, and mobile projects — built
+        with everything from Django and PostgreSQL to React, Node, and
+        Angular.
+      </p>
 
-      <div class="work-grid">
-        <!-- Recipe Manager App (Featured) -->
-        <article class="project-card project-card--featured">
+      <!-- Recipe Manager App (Featured) -->
+      <section class="project-spotlight">
+        <div class="spotlight-image">
           <img
             src="img/recipe-app-screenshot.png"
             alt="Recipe Manager Application Screenshot"
-            class="project-card__image"
           />
-          <div class="project-card__content">
-            <span class="featured-badge">Featured</span>
-            <h2>Recipe Manager App</h2>
-            <p>
-              A full-stack Django web application for creating, managing, and
-              browsing recipes, with user accounts, recipe image uploads, and
-              a reporting dashboard that visualizes recipe data with Pandas
-              and Matplotlib.
-            </p>
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Django</span>
-              <span>PostgreSQL</span>
-              <span>Pandas</span>
-              <span>Matplotlib</span>
-            </div>
-            <div class="project-actions">
-              <a
-                href="https://codys-recipe-app-f140f86eb127.herokuapp.com/"
-                target="_blank"
-                class="button"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/Cody-Ayers/Recipe-app"
-                target="_blank"
-                class="button button--secondary"
-                >View on GitHub</a
-              >
-            </div>
+        </div>
+        <div class="spotlight-content">
+          <span class="featured-badge">Featured</span>
+          <h2>Recipe Manager App</h2>
+          <p>
+            A full-stack Django web application for creating, managing, and
+            browsing recipes, with user accounts, recipe image uploads, and
+            a reporting dashboard that visualizes recipe data with Pandas
+            and Matplotlib.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
           </div>
-        </article>
+          <div class="hero-actions">
+            <a
+              href="https://codys-recipe-app-f140f86eb127.herokuapp.com/"
+              target="_blank"
+              class="button"
+              >View Project</a
+            >
+            <a
+              href="https://github.com/Cody-Ayers/Recipe-app"
+              target="_blank"
+              class="button button--secondary"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+      </section>
 
+      <h2 class="section-title">More projects</h2>
+
+      <div class="work-grid">
         <!-- Pokemon Pokedex -->
         <article class="project-card">
           <img
@@ -105,6 +113,7 @@
             class="project-card__image"
           />
           <div class="project-card__content">
+            <p class="project-kicker">Front-end application</p>
             <h2>Pokemon Pokedex</h2>
             <p>
               A web application built using HTML, CSS, and JavaScript that
@@ -142,6 +151,7 @@
             class="project-card__image"
           />
           <div class="project-card__content">
+            <p class="project-kicker">Backend API</p>
             <h2>Cody'sFlix API</h2>
             <p>
               A server-side component for a movies web application featuring a
@@ -178,6 +188,7 @@
             class="project-card__image"
           />
           <div class="project-card__content">
+            <p class="project-kicker">Front-end application</p>
             <h2>Cody'sFlix React App</h2>
             <p>
               A single-page, client-side React interface built on top of the
@@ -214,6 +225,7 @@
             class="project-card__image"
           />
           <div class="project-card__content">
+            <p class="project-kicker">Progressive web app</p>
             <h2>Meet React App</h2>
             <p>
               A serverless, progressive web application (PWA) built with React
@@ -249,6 +261,7 @@
             class="project-card__image"
           />
           <div class="project-card__content">
+            <p class="project-kicker">Front-end application</p>
             <h2>Cody'sFlix Angular App</h2>
             <p>
               A single-page web application built with Angular and Angular
@@ -277,37 +290,21 @@
           </div>
         </article>
 
-        <!-- Chat App Mobile -->
-        <article class="project-card">
-          <img
-            src="img/chat-screen.png"
-            alt="Chat App Mobile Screenshot"
-            class="project-card__image"
-          />
+        <!-- More on GitHub -->
+        <article class="project-card project-card--more">
           <div class="project-card__content">
-            <h2>Chat App Mobile</h2>
+            <p class="project-kicker">Keep exploring</p>
+            <h2>More projects on GitHub</h2>
             <p>
-              A native mobile chat application built for iOS and Android using
-              React Native, Expo, and Google Firebase Firestore for real-time
-              messaging.
+              These are a few highlights — there's more to explore over on
+              my GitHub, including in-progress work and older projects.
             </p>
-            <div class="project-tags">
-              <span>React Native</span>
-              <span>Expo</span>
-              <span>Firebase</span>
-            </div>
             <div class="project-actions">
               <a
-                href="https://github.com/Cody-Ayers/chat-app"
+                href="https://github.com/Cody-Ayers?tab=repositories"
                 target="_blank"
                 class="button"
-                >View Project</a
-              >
-              <a
-                href="https://github.com/Cody-Ayers/chat-app"
-                target="_blank"
-                class="button button--secondary"
-                >View on GitHub</a
+                >View GitHub Repositories</a
               >
             </div>
           </div>

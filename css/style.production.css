@@ -302,6 +302,39 @@ button:not(.button--secondary):hover {
   text-align: center;
 }
 
+.page-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: -20px auto 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--button-bg-color);
+  margin: 0 0 6px 0;
+}
+
+.project-card--more {
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--tag-bg);
+  border: 1px dashed var(--border-strong);
+}
+
+.project-card--more h2 {
+  margin-bottom: 8px;
+}
+
+.project-card--more p {
+  margin-bottom: 20px;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: 1fr;
