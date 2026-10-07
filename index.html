@@ -14,34 +14,31 @@
   </head>
   <body>
     <header class="page-header">
-      <img
-        src="img/cody-ayers-logo.png"
-        alt="Cody Ayers Logo"
-        class="page-header__item"
-        id="logo"
-      />
+      <a href="index.html" class="page-header__item">
+        <img src="img/cody-ayers-logo.png" alt="Cody Ayers home" id="logo" />
+      </a>
       <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
+        <ul class="navigation-list">
+          <li>
             <a
               href="index.html"
-              role="menuitem"
               class="navigation-list__item navigation-list__item--active"
+              aria-current="page"
               >Home</a
             >
           </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="about.html" class="navigation-list__item"
               >About</a
             >
           </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="work.html" class="navigation-list__item"
               >Work</a
             >
           </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="contact.html" class="navigation-list__item"
               >Contact</a
             >
           </li>
@@ -54,7 +51,7 @@
       <section class="hero-card">
         <div class="hero-avatar">
           <img
-            src="img/cody-headshot.png"
+            src="img/cody-headshot.jpg"
             alt="Cody Ayers Headshot"
             class="profile__portrait"
           />
@@ -140,7 +137,7 @@
           <!-- Project 1 -->
           <article class="project-card">
             <div class="project-card__content">
-              <h3>Movie Flix App</h3>
+              <h3>Cody'sFlix App</h3>
               <p>
                 A full-stack React web app allowing users to browse movies,
                 register accounts, and manage their favorite movies list.

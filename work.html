@@ -4,47 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Work | Cody Ayers</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link href="img/cody-ayers-favicon-.png" rel="shortcut icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.production.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <!-- Header with navigation -->
     <header class="page-header">
-      <img src="img/cody-ayers-logo.png" alt="Cody Ayers Logo" id="logo" />
+      <a href="index.html" class="page-header__item">
+        <img src="img/cody-ayers-logo.png" alt="Cody Ayers home" id="logo" />
+      </a>
       <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
+        <ul class="navigation-list">
+          <li>
+            <a href="index.html" class="navigation-list__item"
               >Home</a
             >
           </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="about.html" class="navigation-list__item"
               >About</a
             >
           </li>
-          <li role="presentation">
+          <li>
             <a
               href="work.html"
-              role="menuitem"
               class="navigation-list__item navigation-list__item--active"
+              aria-current="page"
               >Work</a
             >
           </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="contact.html" class="navigation-list__item"
               >Contact</a
             >
           </li>
@@ -111,6 +109,7 @@
             src="img/pokedex-screenshot.png"
             alt="Pokemon Pokedex App Screenshot"
             class="project-card__image"
+            loading="lazy"
           />
           <div class="project-card__content">
             <p class="project-kicker">Front-end application</p>
@@ -128,7 +127,7 @@
             </div>
             <div class="project-actions">
               <a
-                href="https://cody-ayers.github.io/Pokemon-pokedex//"
+                href="https://cody-ayers.github.io/Pokemon-pokedex/"
                 target="_blank"
                 class="button"
                 >View Project</a
@@ -149,6 +148,7 @@
             src="img/Myflix-API.png"
             alt="Cody'sFlix API Screenshot"
             class="project-card__image"
+            loading="lazy"
           />
           <div class="project-card__content">
             <p class="project-kicker">Backend API</p>
@@ -165,10 +165,10 @@
             </div>
             <div class="project-actions">
               <a
-                href="https://codysflix-api-2a259c1b3f95.herokuapp.com/"
+                href="https://codys-flix-0b23a40a1d0d.herokuapp.com/documentation.html"
                 target="_blank"
                 class="button"
-                >View Project</a
+                >View API Docs</a
               >
               <a
                 href="https://github.com/Cody-Ayers/movie_api"
@@ -183,9 +183,10 @@
         <!-- Cody'sFlix React App -->
         <article class="project-card">
           <img
-            src="img/CodysFlix-React.png"
+            src="img/CodysFlix-React.jpg"
             alt="Cody'sFlix React App Screenshot"
             class="project-card__image"
+            loading="lazy"
           />
           <div class="project-card__content">
             <p class="project-kicker">Front-end application</p>
@@ -208,7 +209,7 @@
                 >View Project</a
               >
               <a
-                href="https://github.com/Cody-Ayers/myFlix-client"
+                href="https://github.com/Cody-Ayers/codysFlix-client"
                 target="_blank"
                 class="button button--secondary"
                 >View on GitHub</a
@@ -223,6 +224,7 @@
             src="img/Meet_Screenshot.png"
             alt="Meet React App Screenshot"
             class="project-card__image"
+            loading="lazy"
           />
           <div class="project-card__content">
             <p class="project-kicker">Progressive web app</p>
@@ -253,12 +255,45 @@
           </div>
         </article>
 
+        <!-- Chat App -->
+        <article class="project-card">
+          <img
+            src="img/chat-app.jpg"
+            alt="Chat App conversation screen on Android"
+            class="project-card__image project-card__image--phone"
+            loading="lazy"
+          />
+          <div class="project-card__content">
+            <p class="project-kicker">Mobile application</p>
+            <h2>Chat App</h2>
+            <p>
+              A native mobile chat application built with React Native and
+              Expo, using Firebase for real-time messaging, image sharing, and
+              location sharing, with offline message storage.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-actions">
+              <a
+                href="https://github.com/Cody-Ayers/messenger-app"
+                target="_blank"
+                class="button button--secondary"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
         <!-- Cody'sFlix Angular App -->
         <article class="project-card">
           <img
-            src="img/Angular-app.png"
+            src="img/Angular-app.jpg"
             alt="Cody'sFlix Angular App Screenshot"
             class="project-card__image"
+            loading="lazy"
           />
           <div class="project-card__content">
             <p class="project-kicker">Front-end application</p>
@@ -314,15 +349,15 @@
 
     <!-- Footer -->
     <footer class="page-footer">
-      <p>Find me on</p>
+      <p>Find me on:</p>
       <div class="social-media">
         <a href="https://github.com/Cody-Ayers" target="_blank"
-          ><img src="img/github_icon.svg" alt="Github Logo"
+          ><img src="img/github_icon.svg" alt="GitHub"
         /></a>
         <a
           href="https://www.linkedin.com/in/cody-ayers-5764b88b/"
           target="_blank"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn Logo"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
         /></a>
       </div>
     </footer>

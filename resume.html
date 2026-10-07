@@ -16,33 +16,29 @@
   </head>
   <body>
     <header class="page-header">
-      <img
-        src="img/cody-ayers-logo.png"
-        alt="Cody Ayers Logo"
-        class="page-header__item"
-        id="logo"
-      />
+      <a href="index.html" class="page-header__item">
+        <img src="img/cody-ayers-logo.png" alt="Cody Ayers home" id="logo" />
+      </a>
       <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
+        <ul class="navigation-list">
+          <li>
+            <a href="index.html" class="navigation-list__item"
               >Home</a
             >
           </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="about.html" class="navigation-list__item"
               >About</a
             >
           </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
+          <li>
+            <a href="work.html" class="navigation-list__item"
               >Work</a
             >
           </li>
-          <li role="presentation">
+          <li>
             <a
               href="contact.html"
-              role="menuitem"
               class="navigation-list__item"
               >Contact</a
             >
@@ -67,8 +63,6 @@
         <div class="resume-contact">
           <span>Colorado Springs, CO</span>
           <span>&middot;</span>
-          <a href="tel:7196481820">719-648-1820</a>
-          <span>&middot;</span>
           <a href="mailto:cayers21@gmail.com">cayers21@gmail.com</a>
           <span>&middot;</span>
           <a
@@ -84,10 +78,11 @@
         <p class="resume-summary">
           Software Engineer and Full-Stack Web Developer with hands-on
           experience designing, developing, testing, debugging, and
-          deploying web and mobile applications using JavaScript, React,
-          Node.js, Express, MongoDB, Python, and REST APIs. Experienced
-          building full-stack solutions and utilizing Git-based development
-          workflows.
+          deploying web and mobile applications using JavaScript, Python,
+          React, Angular, Django, Node.js, Express, PostgreSQL, MongoDB, and
+          REST APIs. Experienced building full-stack solutions end to end,
+          from database design to data reporting, and utilizing Git-based
+          development workflows.
         </p>
       </section>
 
@@ -100,15 +95,22 @@
           </p>
           <p class="resume-skill-row">
             <strong>Front-end:</strong>
-            <span>React, React Native, Responsive Design, API Integration</span>
+            <span
+              >React, React Native, Angular, Responsive Design, API
+              Integration</span
+            >
           </p>
           <p class="resume-skill-row">
             <strong>Back-end:</strong>
-            <span>Node.js, Express.js, REST APIs, JWT Authentication</span>
+            <span>Node.js, Express.js, Django, REST APIs, JWT Authentication</span>
           </p>
           <p class="resume-skill-row">
             <strong>Databases:</strong>
-            <span>MongoDB, Mongoose, Firebase</span>
+            <span>PostgreSQL, MongoDB, Mongoose, Firebase</span>
+          </p>
+          <p class="resume-skill-row">
+            <strong>Data &amp; reporting:</strong>
+            <span>Pandas, NumPy, Matplotlib</span>
           </p>
           <p class="resume-skill-row">
             <strong>Tools:</strong>
@@ -124,24 +126,34 @@
       <section class="resume-section">
         <h2 class="resume-section-title">Featured projects</h2>
         <div class="resume-entry">
-          <p class="resume-entry-title">Cody'sFlix API</p>
+          <p class="resume-entry-title">Recipe Manager App</p>
           <p class="resume-entry-detail">
-            Built a secure RESTful API using Node.js, Express, MongoDB and
-            JWT.
+            Built a full-stack Django and PostgreSQL application with user
+            authentication, image uploads, and a reporting dashboard that
+            visualizes recipe data with Pandas and Matplotlib.
           </p>
         </div>
         <div class="resume-entry">
-          <p class="resume-entry-title">Cody'sFlix Client</p>
+          <p class="resume-entry-title">Cody'sFlix Clients (React &amp; Angular)</p>
           <p class="resume-entry-detail">
-            Developed a responsive React application integrated with REST
-            APIs.
+            Developed two single-page front ends for the same API: a
+            responsive React app and an Angular app built with TypeScript and
+            Angular Material.
           </p>
         </div>
         <div class="resume-entry">
-          <p class="resume-entry-title">Messenger App</p>
+          <p class="resume-entry-title">Chat App</p>
           <p class="resume-entry-detail">
-            Built a cross-platform React Native application utilizing
-            Firebase cloud services.
+            Built a cross-platform React Native mobile app with Expo and
+            Firebase for real-time messaging, image sharing, and location
+            sharing.
+          </p>
+        </div>
+        <div class="resume-entry">
+          <p class="resume-entry-title">Meet App</p>
+          <p class="resume-entry-detail">
+            Built a serverless progressive web app with React, AWS Lambda,
+            and the Google Calendar API using test-driven development.
           </p>
         </div>
       </section>
@@ -178,18 +190,24 @@
             Assistant Director, Tier I Operations
           </p>
           <p class="resume-entry-subtitle">
-            Colorado Springs Amateur Hockey Association
+            Colorado Springs Amateur Hockey Association &middot; 2017&ndash;2019
           </p>
         </div>
         <div class="resume-entry">
           <p class="resume-entry-title">Territory Manager</p>
-          <p class="resume-entry-subtitle">Crestone Medical</p>
+          <p class="resume-entry-subtitle">Crestone Medical &middot; 2014&ndash;2017</p>
         </div>
         <div class="resume-entry">
           <p class="resume-entry-title">
             Professional Hockey Player &amp; Assistant Captain
           </p>
-          <p class="resume-entry-subtitle">Danbury Whalers</p>
+          <p class="resume-entry-subtitle">
+            Danbury Whalers &middot; 2012&ndash;2014
+          </p>
+          <p class="resume-entry-detail">
+            League MVP (2013&ndash;14), 2012&ndash;13 champion, and the leading
+            scorer in team history.
+          </p>
         </div>
       </section>
     </main>

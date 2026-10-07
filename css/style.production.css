@@ -44,6 +44,7 @@ body {
 }
 
 #logo {
+  display: block;
   max-height: 40px;
   width: auto;
   object-fit: contain;
@@ -415,6 +416,13 @@ button:not(.button--secondary):hover {
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 20px;
   display: block;
+}
+
+.project-card__image--phone {
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--tag-bg);
+  padding: 16px 0;
 }
 
 .project-card__content {
