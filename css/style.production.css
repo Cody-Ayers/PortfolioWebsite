@@ -276,6 +276,15 @@ button:not(.button--secondary):hover {
   display: block;
 }
 
+.spotlight-image--app {
+  background-color: #6e222a;
+}
+
+.spotlight-image--app img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .spotlight-content {
   flex: 1 1 55%;
   padding: 40px;

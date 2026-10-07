@@ -55,47 +55,36 @@
       <h1 class="page-title">My Projects</h1>
       <p class="page-subtitle">
         A collection of full-stack, front-end, and mobile projects — built
-        with everything from Django and PostgreSQL to React, Node, and
-        Angular.
+        with everything from Next.js and TypeScript to Django, React, Node,
+        and Angular.
       </p>
 
-      <!-- Recipe Manager App (Featured) -->
+      <!-- Club Games (Featured) -->
       <section class="project-spotlight">
-        <div class="spotlight-image">
+        <div class="spotlight-image spotlight-image--app">
           <img
-            src="img/recipe-app-screenshot.png"
-            alt="Recipe Manager Application Screenshot"
+            src="img/club-games.jpg"
+            alt="Club Games leaderboard and hole-by-hole score entry screens on a phone"
           />
         </div>
         <div class="spotlight-content">
-          <span class="featured-badge">Featured</span>
-          <h2>Recipe Manager App</h2>
+          <span class="featured-badge">Featured &middot; In active development</span>
+          <h2>Club Games</h2>
           <p>
-            A full-stack Django web application for creating, managing, and
-            browsing recipes, with user accounts, recipe image uploads, and
-            a reporting dashboard that visualizes recipe data with Pandas
-            and Matplotlib.
+            A mobile-first web app for running golf money games. An organizer
+            sets up the day's format, teams and pots, one player per group
+            enters scores hole by hole, and everyone follows live team, skins
+            and deuces standings, with payouts calculated automatically.
+            Being built with and for my weekly golf group in Colorado
+            Springs.
           </p>
           <div class="project-tags">
-            <span>Python</span>
-            <span>Django</span>
-            <span>PostgreSQL</span>
-            <span>Pandas</span>
-            <span>Matplotlib</span>
-          </div>
-          <div class="hero-actions">
-            <a
-              href="https://codys-recipe-app-f140f86eb127.herokuapp.com/"
-              target="_blank"
-              class="button"
-              >View Project</a
-            >
-            <a
-              href="https://github.com/Cody-Ayers/Recipe-app"
-              target="_blank"
-              class="button button--secondary"
-              >View on GitHub</a
-            >
+            <span>Next.js</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Supabase</span>
+            <span>Tailwind CSS</span>
+            <span>Vitest</span>
           </div>
         </div>
       </section>
@@ -103,6 +92,46 @@
       <h2 class="section-title">More projects</h2>
 
       <div class="work-grid">
+        <!-- Recipe Manager App -->
+        <article class="project-card">
+          <img
+            src="img/recipe-app-screenshot.png"
+            alt="Recipe Manager Application Screenshot"
+            class="project-card__image"
+            loading="lazy"
+          />
+          <div class="project-card__content">
+            <p class="project-kicker">Full-stack application</p>
+            <h2>Recipe Manager App</h2>
+            <p>
+              A full-stack Django web application for creating, managing, and
+              browsing recipes, with user accounts, recipe image uploads, and
+              a reporting dashboard that visualizes recipe data with Pandas
+              and Matplotlib.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>PostgreSQL</span>
+              <span>Pandas</span>
+            </div>
+            <div class="project-actions">
+              <a
+                href="https://codys-recipe-app-f140f86eb127.herokuapp.com/"
+                target="_blank"
+                class="button"
+                >View Project</a
+              >
+              <a
+                href="https://github.com/Cody-Ayers/Recipe-app"
+                target="_blank"
+                class="button button--secondary"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
         <!-- Pokemon Pokedex -->
         <article class="project-card">
           <img
